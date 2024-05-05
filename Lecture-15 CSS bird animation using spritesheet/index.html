@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Bird Animation</title>
+    <style>
+        .box{
+            width: 106px;
+            height: 112px;
+            background-image: url('./twitter\ bird.png');
+            margin: 200px auto;
+            animation-name: bird;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+           
+        }
+        @keyframes bird{
+            from{
+                background-position: 0px 0px;
+            }
+            
+            to{
+                background-position:  -447px    0px;
+            }
+        }
+        .bird2{
+            width: 141px;
+            height: 128px;
+            background-image: url("red\ bird\ animation.jpeg");
+            animation-name: xyz;
+            animation-duration: 0.9s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes xyz{
+            from{
+                background-position: 0px 0px;
+            }
+            to{
+                background-position: -547px 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="bird2"></div>
+</body>
+</html>
